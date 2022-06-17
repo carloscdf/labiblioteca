@@ -1,0 +1,81 @@
+@charset "UTF-8";
+
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    clear: both;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    font-smooth: always;
+    scroll-behavior: smooth;
+}
+
+
+.Containercontent {
+    max-width: 900px;
+    float: left;
+    width: 100%;
+}
+
+#Containercontent_authorPage {
+    padding-bottom: 60px;
+}
+
+.CONTAINER {
+    background-color: var(--back);
+}
+
+#authorPageCONTAINER {
+    padding-top: 200px;
+}
+
+.BIGOREO {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: space-between;
+    padding-bottom: 80px;
+}
+
+.divisor {
+    padding: 40px;
+} 
+
+/*footer*/
+.footerContainer {
+    background-color: var(--back);
+    display: block;
+}
+
+.footerBox {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    font-size: 16px;
+    font-family: var(--text);
+    color: var(--grey);
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#HlineHF {
+    border-bottom: 1px solid rgba(160, 160, 160, 0.082);
+    position: relative;
+    top: -2px;
+}
+
+
+
+/*YOUTUBE FONT RESET*/
+.b_searc, .b_menu, #AuthorNameHeader {
+    position: relative;
+    top: -2px;
+}
+
+#alert-text {
+    position: relative;
+    top: -1px; 
+}

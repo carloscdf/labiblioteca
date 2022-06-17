@@ -1,0 +1,97 @@
+.b2:hover #profileContainer{
+    display: block;
+}
+
+
+#profileContainer {
+    display: none;
+}
+
+.Profilecontainer {
+    max-width: 1330px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: right;
+}
+
+.profileContainer {
+    margin-top: 10px;
+    max-width: 300px;
+    width: 100%;
+    background-color: #ffffff;
+    color: var(--white);
+    border-radius: 5px;
+    position: absolute;
+    z-index: 6;
+    border: 1px solid var(--light-grey);
+
+    /*Shadow*/
+    -webkit-box-shadow: 1px 0px 30px 0px rgba(44, 50, 50, 0.12);
+-moz-box-shadow:    1px 0px 30px 0px rgba(44, 50, 50, 0.12);
+box-shadow:         1px 0px 30px 0px rgba(44, 50, 50, 0.12);
+}
+
+.imageProfile {
+    max-width: 80px;
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+
+    padding-top: 30px;
+}
+
+#Profileimage {
+    width: 85px;
+    height: 85px;
+    margin: 0 auto;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 100%;
+}
+
+.nameProfile {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    color: var(--dark);
+    font-family: var(--text);
+}
+
+#ProfileUsername {
+    color: var(--grey);
+}
+
+#Profilename {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.buttonProfile {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-family: var(--text);  
+    
+}
+
+#Profilebutton {
+    font-size: 14px;
+    padding: 10px 15px 10px 15px;
+    border: 1px solid var(--grey);
+    color: var(--back);
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.2s;
+    font-family: var(--desc);
+    background-color: var(--black);
+}
+
+#Profilebutton:hover {
+    background-color: var(--dark); 
+    color: var(--white);
+}

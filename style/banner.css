@@ -1,0 +1,91 @@
+/*Banner*/
+
+.Banner {
+    background-color: var(--back);
+    height: 230px;
+    position: relative;
+    top: -2px;
+}
+
+.Bannerbox {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    width: 100%;
+}
+
+.Bannertext {
+    max-width: 250px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 230px;
+}
+
+/*Banner Text*/
+
+#BTexttitle {
+    width: 250px;
+    height: 55px;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+/*
+#BTexttitle {
+    font-size: 50px;
+    line-height: 41px;
+    font-family: var(--logo);
+    font-weight: 600;
+    font-style: italic;
+    color: var(--darkS);
+    cursor: pointer;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+#BTexttitle:hover {
+    color: var(--text-grey);
+
+}*/
+
+.BTextdesc {
+    margin-top: 10px;
+}
+
+#BTextdesc {
+    color: var(--dark);
+    font-size: 18px;
+    margin-top: 10px;
+    line-height: 20px;
+    font-family: var(--text);
+
+}
+
+
+/*Banner Img*/
+.Bannerimg {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.Imgbanner {
+    max-width: 752px;
+    max-height: 230px;
+    width: 100%;
+}
+
+#Himg {
+    width: 100%;
+    height: 230px;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    object-fit: cover;
+    object-position: center;
+}

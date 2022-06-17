@@ -1,0 +1,122 @@
+.Contentsidebar {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+
+
+.ClassificationBox {
+    margin-top: 30px;
+
+}
+
+.Clabook {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/*
+.Classificationbook {
+    border: 1px solid var(--text-grey);
+    padding: 8px 8px 8px 8px;
+    background-color: var(--back);
+    margin-top: 10px;
+    width: fit-content;
+    font-size: 14px;
+    border-radius: 20px;
+    font-weight: 300;
+    font-family: var(--text);
+    color: var(--text-grey);
+    cursor: pointer;
+    transition: 0.1s;
+    text-decoration: none;
+    max-width: 200px;
+    overflow: hidden !important;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+*/
+
+.Classificationbook {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+
+}
+
+.CBookText,
+.sideBarimgBackground {
+    border-radius: 5px;
+}
+
+.CBookText {
+    cursor: pointer;
+    position: absolute;
+    background-color: #00000086;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: var(--text);
+    color: var(--white);
+    cursor: pointer;
+    text-decoration: none;
+    width: 202px;
+    height: 50px;
+    overflow: hidden !important;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.2s;
+}
+
+.CBookText:hover {
+    background-color: var(--back);
+    color: var(--dark);
+    font-size: 18px;
+    outline: 2px solid var(--back);
+    -webkit-box-shadow: 5px 5px 20px 5px rgba(0,0,0,0.08); 
+    box-shadow: 5px 5px 20px 5px rgba(0,0,0,0.08);
+}
+
+.sideBarimgBackground {
+    width: 202px;
+    height: 50px;
+    object-position: 50% 30%;
+    object-fit: cover;
+    transition: 0.9s;
+}
+
+.sideBarimgBackground:hover {
+    -ms-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2)
+}
+
+/*.Classificationbook:hover {
+    background-color: var(--light-light-grey);
+}*/
+
+.LinkClassificationbook {
+    text-decoration: none;
+}
+
+#slideartitle {
+    font-size: 44px;
+    font-family: var(--text);
+    color: var(--grey);
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

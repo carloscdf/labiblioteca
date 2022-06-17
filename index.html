@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Leia livros de grandes autores sem nenhum custo.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>labiblioteca</title>
+    <link rel="shortcut icon" href="src/favicon/favicon_main.png" type="image/x-icon">
+    <script src="script/main.js"></script>
+
+
+    <link rel="stylesheet" href="style/sidebar.css">
+    <link rel="stylesheet" href="style/header.css">
+    <link rel="stylesheet" href="style/content-body.css">
+    <link rel="stylesheet" href="style/root.css">
+    <link rel="stylesheet" href="style/banner.css">
+    <link rel="stylesheet" href="style/profiles.css">
+    <link rel="stylesheet" href="style/bookarea.css">
+    <link rel="stylesheet" href="style/user_profile.css">
+</head>
+
+<body>
+    <main class="container">
+
+        <header>
+            <!--Logo-->
+            <div class="header-box">
+                <div class="block-logo">
+                    <img id="main-logo" src="src/logo/labiblioteca_logo.svg" alt="labiblioteca">
+                </div>
+                <!--Bloco de alerta-->
+                <div class="block-alert">
+                    <div class="text-alert">
+                        <span id="alert-text">
+                            <a href="#" id="alert-text"><span id="Alerttext">A
+                                    Rainha
+                                    Vermelha</span> adicionado ao
+                                acervo de <b>labiblioteca</b></a>
+                            <span>
+                    </div>
+                </div>
+                <!--Botões da header-->
+                <div class="block-buttons">
+                    <ul class="header-button2">
+                        <li class="b"><button onclick="mostraDiv()" class="b1">
+                                <svg class="bi01" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path
+                                        d="M23.822 20.88l-6.353-6.354c.93-1.465 1.467-3.2 1.467-5.059.001-5.219-4.247-9.467-9.468-9.467s-9.468 4.248-9.468 9.468c0 5.221 4.247 9.469 9.468 9.469 1.768 0 3.421-.487 4.839-1.333l6.396 6.396 3.119-3.12zm-20.294-11.412c0-3.273 2.665-5.938 5.939-5.938 3.275 0 5.94 2.664 5.94 5.938 0 3.275-2.665 5.939-5.94 5.939-3.274 0-5.939-2.664-5.939-5.939z" />
+                                </svg>
+                                <p class="b_searc">Pesquisa</p>
+                            </button></li>
+                        <li class="b"><button onclick="mostraPerfil()" class="b2">
+                                <img class="bi02" style="border-radius: 100%"
+                                    src="src/profile/carlos7817327836364364634.png" /></img>
+                                <p class="b_menu">Carlos &#128527</p>
+                            </button></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div id="HlineHF"></div>
+
+            <!--Botão de pesquisa-->
+            <div id="areaPesquisa">
+                <input type="text" id="txtPesquisa" placeholder="Que livro você quer ler hoje?" />
+                <button id="btnPesquisa">Buscar</button>
+            </div>
+        </header>
+
+        <!--Perfil-->
+        <div class="Profilecontainer">
+            <div class="profileContainer" id="profileContainer">
+                <div class="imageProfile">
+                    <img src="src/profile/carlos7817327836364364634.png" id="Profileimage">
+                </div>
+                <div class="nameProfile">
+                    <p id="Profilename">Carlos &#128527</p>
+                    <p id="ProfileUsername">@carlos</p>
+                </div>
+                <div class="buttonProfile">
+                    <button id="Profilebutton">Ver perfil</button>
+                </div>
+            </div>
+        </div>
+     
+        <div  id="HlineHF"></div>
+
+        <!--Banner-->
+
+
+        <div class="Banner">
+            <div class="Bannerbox">
+                <div class="Bannertext">
+                    <div class="BTexttitle">
+                        <a id="BTexttitle" href="#">
+                            <img src="files/header_img/logo.svg" id="BTexttitle">
+
+                            </img>
+                        </a>
+                    </div>
+                    <div class="BTextdesc">
+                        <p id="BTextdesc">Adicionado recentemente
+                            ao acervo de livros.</p>
+                    </div>
+                </div>
+                <div class="Bannerimg">
+                    <div class="Imgbanner"><img src="files/header_img/banner.svg" alt="" id="Himg" draggable="false">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="HlineHF"></div>
+
+        <!--CONTEÚDO-->
+        <div class="CONTAINER">
+            <div class="BIGOREO">
+
+                <!--Sidebar-->
+
+                <div class="Contentsidebar">
+                    <div class="BoxTitle">
+                        <div class="ClassificationBox">
+                            <div class="Clabook">
+                                <a href="#" class="LinkClassificationbook">
+                                    <div class="Classificationbook">
+                                        <img src="src/side-bar_indications_background/romance.png" alt="romance"
+                                            class="sideBarimgBackground">
+                                        <p class="CBookText">Romance</p>
+                                    </div>
+                                </a>
+
+                        
+
+                                <a href="#" class="LinkClassificationbook">
+                                    <div class="Classificationbook">
+                                        <img src="src/side-bar_indications_background/hqs.png" alt="romance"
+                                            class="sideBarimgBackground">
+                                        <p class="CBookText">Mangá e HQs</p>
+                                    </div>
+                                </a>
+
+                                <a href="#" class="LinkClassificationbook">
+                                    <div class="Classificationbook">
+                                        <img src="src/side-bar_indications_background/didáticos.jpg" alt="romance"
+                                            class="sideBarimgBackground">
+                                        <p class="CBookText">Didáticos</p>
+                                    </div>
+                                </a>
+
+                                <a href="#" class="LinkClassificationbook">
+                                    <div class="Classificationbook">
+                                        <img src="src/side-bar_indications_background/literatura_fantástica.png"
+                                            alt="romance" class="sideBarimgBackground">
+                                        <p class="CBookText">Literatura Fantástica</p>
+                                    </div>
+                                </a>
+
+                                <a href="#" class="LinkClassificationbook">
+                                    <div class="Classificationbook">
+                                        <img src="src/side-bar_indications_background/ficcao_fantástica.jpg"
+                                            alt="romance" class="sideBarimgBackground">
+                                        <p class="CBookText">Ficção Fantástica</p>
+                                    </div>
+                                </a>
+
+                                <a href="#" class="LinkClassificationbook">
+                                    <div class="Classificationbook">
+                                        <img src="src/side-bar_indications_background/suspense.jpg" alt="romance"
+                                            class="sideBarimgBackground">
+                                        <p class="CBookText">Suspense</p>
+                                    </div>
+                                </a>
+
+                                <a href="#" class="LinkClassificationbook">
+                                    <div class="Classificationbook">
+                                        <img src="src/side-bar_indications_background/ficcao_de_terror.jpg"
+                                            alt="romance" class="sideBarimgBackground">
+                                        <p class="CBookText">Ficção de Terror</p>
+                                    </div>
+                                </a>
+
+                                <a href="#" class="LinkClassificationbook">
+                                    <div class="Classificationbook">
+                                        <img src="src/side-bar_indications_background/suspense_pscicologico.jpg"
+                                            alt="romance" class="sideBarimgBackground">
+                                        <p class="CBookText">Suspense Psicológico</p>
+                                    </div>
+                                </a>
+
+                                <a href="#" class="LinkClassificationbook">
+                                    <div class="Classificationbook">
+                                        <img src="src/side-bar_indications_background/sobrenatural.png" alt="romance"
+                                            class="sideBarimgBackground">
+                                        <p class="CBookText">Sobrenatural</p>
+                                    </div>
+                                </a>
+
+                                <a href="#" class="LinkClassificationbook">
+                                    <div class="Classificationbook">
+                                        <img src="src/side-bar_indications_background/horror.jpg" alt="romance"
+                                            class="sideBarimgBackground">
+                                        <p class="CBookText">Horror</p>
+                                    </div>
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+                <div class="Containercontent">
+
+                    <div class="Contentmain">
+
+                        <!--Autores-->
+
+                        <div class="CBox">
+                            <div class="BoxTitle">
+                                <h3 id="Boxtitle">
+                                    Autores mais procurados
+                                </h3>
+                            </div>
+                            <section class="theBox">
+
+                                <div id="BoxBox"><a id="BoxBox" href="profile/alice_oseman.html">
+                                        <div class="profilebox">
+                                            <img src="files/author_profile_picture/oseman.png" id="profileimg">
+                                            <p id="profiletext">Alice Oseman</p>
+                                        </div>
+                                    </a>
+                                </div>
+
+
+
+                                <div id="BoxBox"><a id="BoxBox" href="#">
+                                        <div class="profilebox">
+                                            <img src="files/author_profile_picture/stephen.png" id="profileimg">
+                                            <p id="profiletext">Stephen King</p>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div id="BoxBox"><a id="BoxBox" href="#">
+                                        <div class="profilebox">
+                                            <img src="files/author_profile_picture/quinn.png" id="profileimg">
+                                            <p id="profiletext">Julia Quinn</p>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div id="BoxBox"><a id="BoxBox" href="#">
+                                        <div class="profilebox">
+                                            <img src="files/author_profile_picture/davis.png" id="profileimg">
+                                            <p id="profiletext">Angela Davis</p>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div id="BoxBox"><a id="BoxBox" href="#">
+                                        <div class="profilebox">
+                                            <img src="files/author_profile_picture/agatha_christie.png" id="profileimg">
+                                            <p id="profiletext">Agatha Christie</p>
+                                        </div>
+                                    </a>
+                                </div>
+
+                            </section>
+                        </div>
+
+                        <!--Livros-->
+
+                        <div class="CBox">
+                            <div class="BoxTitle">
+                                <h3 id="Boxtitle">
+                                    Livros mais procurados
+                                </h3>
+                            </div>
+                            <section class="theBox">
+
+                                <div id="BoxBox">
+                                    <div class="Coverbook">
+
+                                        <a href="book/heartstopper_de_maos_dadas.html" class="TheBookcolumn-link">
+                                            <div id="Bookimg"><img
+                                                    src="files/Coverbooks/alice_oseman/heartstopper_de_mãos_dadas.png"
+                                                    alt="" id="Imgbook"></div>
+                                            <p id="Bookname">Heartstopper: De mãos dadas</p>
+                                        </a>
+                                        <a href="#" id="Classificationbook">Romance</a>
+                                    </div>
+                                </div>
+
+                                <div id="BoxBox">
+                                    <div class="Coverbook">
+                                        <a href="#" class="TheBookcolumn-link">
+                                            <div id="Bookimg"><img
+                                                    src="files/Coverbooks/kacen_callender/felix_para_sempre.jpg" alt=""
+                                                    id="Imgbook"></div>
+                                            <p id="Bookname">Felix para sempre</p>
+                                        </a>
+                                        <a href="#" id="Classificationbook">Literatura e Ficção</a>
+                                    </div>
+                                </div>
+
+                                <div id="BoxBox">
+                                    <div class="Coverbook">
+                                        <a href="#" class="TheBookcolumn-link">
+                                            <div id="Bookimg"><img
+                                                    src="files/Coverbooks/charlie_donlea/a_garota_do_lago.png" alt=""
+                                                    id="Imgbook"></div>
+                                            <p id="Bookname">Livro: A Garota do Lago</p>
+                                        </a>
+                                        <a href="#" id="Classificationbook">Ficção Científica</a>
+                                    </div>
+                                </div>
+
+
+                                <div id="BoxBox">
+                                    <div class="Coverbook">
+                                        <a href="#" class="TheBookcolumn-link">
+                                            <div id="Bookimg"><img
+                                                    src="files/Coverbooks/casey_mcquiston/vermelho_branco_e_sangue_azul.png"
+                                                    alt="" id="Imgbook"></div>
+                                            <p id="Bookname">Vermelho Branco e Sangue Azul</p>
+                                        </a>
+                                        <a href="#" id="Classificationbook">Romance</a>
+                                    </div>
+                                </div>
+
+                                <div id="BoxBox">
+                                    <div class="Coverbook">
+
+                                        <a href="#" class="TheBookcolumn-link">
+                                            <div id="Bookimg"><img src="files/Coverbooks/j.r.r.tolkien/o_hobbit.png"
+                                                    alt="" id="Imgbook"></div>
+                                            <p id="Bookname">Livro: O Hobbit, por J.R.R. Tolkien </p>
+                                        </a>
+                                        <a href="#" id="Classificationbook">Literatura Fantástica</a>
+                                    </div>
+                                </div>
+
+
+                            </section>
+                        </div>
+
+                        <!--Second area-->
+
+
+                        <div class="BoxTitle">
+                            <h3 id="Boxtitle">
+                                Livros de Alice Oseman
+                            </h3>
+                        </div>
+                        <section class="theBox">
+
+                            <div id="BoxBox">
+                                <div class="Coverbook">
+                                    <a href="book/heartstopper_de_maos_dadas.html" class="TheBookcolumn-link">
+                                        <div id="Bookimg"><img
+                                                src="files/Coverbooks/alice_oseman/heartstopper_de_mãos_dadas.png"
+                                                alt="" id="Imgbook"></div>
+                                        <p id="Bookname">Heartstopper: De mãos dadas</p>
+                                    </a>
+                                    <a href="#" id="Classificationbook">Romance</a>
+                                </div>
+                            </div>
+
+                            <div id="BoxBox">
+                                <div class="Coverbook">
+                                    <a href="#" class="TheBookcolumn-link">
+                                        <div id="Bookimg"><img
+                                                src="files/Coverbooks/alice_oseman/Heartstopper_Minha_Pessoa_Fav.png"
+                                                alt="" id="Imgbook"></div>
+                                        <p id="Bookname">Heartstopper: Minha
+                                            pessoa favorita
+                                        </p>
+                                    </a>
+                                    <a href="#" id="Classificationbook">Romance</a>
+                                </div>
+                            </div>
+
+                            <div id="BoxBox">
+                                <div class="Coverbook">
+                                    <a href="#" class="TheBookcolumn-link">
+                                        <div id="Bookimg"><img
+                                                src="files/Coverbooks/alice_oseman/Heartstopper_Dois_Garotos_Um_Encontro.png"
+                                                alt="" id="Imgbook"></div>
+                                        <p id="Bookname">Heartstopper: Dois garotos, um encontro</p>
+                                    </a>
+                                    <a href="#" id="Classificationbook">Romance</a>
+                                </div>
+                            </div>
+
+                            <div id="BoxBox">
+                                <div class="Coverbook">
+                                    <a href="#" class="TheBookcolumn-link">
+                                        <div id="Bookimg"><img
+                                                src="files/Coverbooks/alice_oseman/Heartstopper_Um_Passo_Adiante.png"
+                                                alt="" id="Imgbook"></div>
+                                        <p id="Bookname">Heartstopper: Um
+                                            passo adiante</p>
+                                    </a>
+                                    <a href="#" id="Classificationbook">Romance</a>
+                                </div>
+                            </div>
+
+                            <div id="BoxBox">
+                                <div class="Coverbook">
+                                    <a href="#" class="TheBookcolumn-link">
+                                        <div id="Bookimg"><img src="files/Coverbooks/alice_oseman/this_winter.png"
+                                                alt="" id="Imgbook"></div>
+                                        <p id="Bookname">Alice Oseman: Loveless</p>
+                                    </a>
+                                    <a href="#" id="Classificationbook">Drama</a>
+                                </div>
+                            </div>
+
+                        </section>
+                    </div>
+
+
+
+
+
+                </div>
+
+                <!--Sidebar-->
+
+                <div class="Contentsidebar">
+                   
+                   
+
+                </div>
+
+            </div>
+        </div>
+
+
+        <div id="HlineHF"></div>
+        <footer class="footerContainer">
+            <div class="footerBox">
+                <span id="footerID">
+                    <b id="destaque">labiblioteca LLC.</b> todos os direitos reservados ©2022.
+                </span>
+            </div>
+        </footer>
+
+
+
+    </main>
+
+</body>
+
+</html>

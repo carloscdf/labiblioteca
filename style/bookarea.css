@@ -1,0 +1,286 @@
+/*CONTENT MAIN*/
+.Contentmain {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.CBox {
+    width: 100%;
+}
+
+.TheBookcolumn-link {
+    text-decoration: none;
+    color: var(--black);
+    transition: 0.2s;
+}
+
+.TheBookcolumn-link:hover {
+    color: var(--dark-grey);
+}
+
+/*Books Cover*/
+.Coverbook {
+    max-width: 130px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    transition: 0.2s;
+
+}
+
+.Coverbook:hover {
+    transform: translateY(-5px);
+    transition: 0.2s;
+}
+
+#Bookimg>#Imgbook {
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+
+#Bookimg:hover>#Imgbook {
+    -webkit-transform: scale(0.95);
+    transform: scale(0.95);
+    transition: 0.2s;
+}
+
+#Bookimg {
+    width: 130px;
+    margin-bottom: 10px;
+}
+
+#Imgbook {
+    width: 130px;
+    height: 194.72px;
+    object-fit: cover;
+    border-radius: 5px;
+    object-position: center;
+}
+
+
+
+
+/*Books name*/
+#Bookname {
+    max-width: 130px;
+    width: 100%;
+    height: 45px;
+    font-size: 18px;
+    font-family: var(--text);
+    font-weight: 500;
+    line-height: 20px;
+    color: var(--dark);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+/*Classification*/
+#Classificationbook {
+    font-family: var(--text);
+    font-size: 14px;
+    line-height: 1px;
+    font-weight: 600;
+    width: fit-content;
+    margin-top: 10px;
+    padding: 10px 7px 11px 7px;
+    border-radius: 20px;
+    background-color: var(--bookdescback);
+    color: var(--bookdesctext);
+    text-align: center;
+    max-width: 130px;
+    cursor: pointer;
+    overflow: hidden !important;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    text-decoration: none;
+}
+
+
+
+/*============================THE BOOK PAGE===========================*/
+
+.TheBookArea {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+
+/*Book Cover Profile Area*/
+
+.BookCoverFeature {
+    max-width: 150px;
+    height: 299.66px;
+    margin-top: 30px;
+}
+
+.TheBookCover {
+    width: 150px;
+    height: 224.66px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#cover0000 {
+    width: 150px;
+    height: 224.66px;
+    object-fit: cover;
+    border-radius: 5px;
+    object-position: center;
+}
+
+.TheBookViews {
+    margin-top: 20px;  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#viewsnumber0000 {
+    text-transform:uppercase;
+    font-size: 18px;
+    font-family: var(--titles);
+    color: var(--dark);
+}
+
+#views0000 {
+    font-size: 18px;
+    position: relative;
+    top: -5px;
+    font-family: var(--text);
+    margin-bottom: 5px; 
+    color: var(--dark);
+}
+
+.thebookareaButtons {
+    width: 150px;
+    margin-top: 30px;
+}
+
+.readButton {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#Readbutton {
+    padding: 10px 40px 10px 40px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    font-size: 18px;
+    background-color: var(--verify);
+    color: var(--white);
+    font-family: var(--text);
+    transition: 0.2s ease-in-out;
+} 
+
+#Readbutton > span {
+    position: relative;
+    top: -2px;
+    margin-left: 10px;
+}
+
+#Readbutton > svg {
+    fill: var(--white);
+    width: 24px;
+    height: 24px;
+}
+
+#Readbutton:hover {
+    transform: translateY(-5px);
+    transition: 0.2s;
+    -webkit-box-shadow: 5px 5px 50px -16px rgba(0,0,0,0.69); 
+    box-shadow: 5px 5px 50px -16px rgba(0,0,0,0.69);
+}
+
+#Kindlebutton {
+    padding: 10px 20px 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    color: var(--dark);
+    background-color: transparent;
+    font-family: var(--text);
+    margin-top: 5px;
+}
+
+#Kindlebutton:hover {
+    text-decoration: underline;
+}
+
+/*Book Content*/
+
+.BookContainer {
+    width: 1020px;
+    margin-top: 30px;
+    height: 500px;
+}
+
+.TheBookTitle {
+    max-width: 900px;
+    width: 100%;
+}
+
+#TheBookTitle {
+    font-size: 38px;
+    font-family: var(--titles);
+    line-height: 36px;
+    position: relative;
+    top: -8px;
+    color: var(--dark);
+}
+
+.TheBookClass {
+    max-width: 230px;
+    width: 100%;
+    display: flex;
+    margin-top: 10px;
+    flex-direction: row;
+    align-items: center;
+}
+
+.BOOkClassificationbook {
+    margin-right: 10px;
+}
+
+.BookPages {
+    margin-top: 30px;
+    max-width: 750px;
+    width: 100%;
+}
+
+.Page0000 {
+    max-width: 750px;
+    width: 100%;
+    margin-top: 20px;
+    height: 100%;
+}
+
+#PageDesc {
+    font-size: 18px;
+    font-family: var(--book-desc);
+    margin: 5px 0px 5px 0px;
+    line-height: 1.4;
+}
+
+.PageDescType {
+    margin-top: 30px;
+}
+
+#PageDescType{
+    font-size: 18px;
+    font-family: var(--book-desc);
+    margin: 20px 0px 0px 0px;
+    line-height: 1.4;
+    color: var(--text-grey);
+}
